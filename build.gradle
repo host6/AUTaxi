@@ -41,11 +41,14 @@ dependencies {
     compile 'org.hibernate:hibernate-core:5.0.2.Final'
     compile 'commons-beanutils:commons-beanutils:1.9.1'
     compile 'postgresql:postgresql:9.1-901-1.jdbc4'
+    compile 'org.quartz-scheduler:quartz:2.2.1'
 
 
 }
 
+// http://localhost:8080/AUTaxi-1.0/api/hello
 war {
+    dependsOn check;
     manifest {
         attributes (
                 "Specification-Title": project.name,
