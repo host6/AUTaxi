@@ -1,2 +1,4 @@
-rootProject.name = 'AUTaxi'
+rootProject.name = 'autaxi'
+include 'core'
+include 'restapi'
 

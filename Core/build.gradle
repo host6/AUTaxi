@@ -1,0 +1,24 @@
+group 'autaxi.core'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    testCompile group: 'log4j', name: 'log4j', version: '1.2.17'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    compile 'commons-io:commons-io:2.4'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.fatboyindustrial.gson-jodatime-serialisers:gson-jodatime-serialisers:1.1.0'
+    compile 'commons-pool:commons-pool:1.6'
+    compile 'commons-dbcp:commons-dbcp:1.4'
+    compile 'commons-dbutils:commons-dbutils:1.6'
+}
